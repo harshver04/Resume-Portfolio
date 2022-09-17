@@ -1,0 +1,159 @@
+
+html{
+    scroll-behavior: smooth;
+}
+.bg-dark{
+    background:rgba(0, 0, 0, 0.8);
+}
+hr{
+    background-color: white;
+}
+/*------------------nav section--------*/
+
+.my-nav{
+    width: 95%;
+    border-radius: 70px;
+    left: 60px;
+    top: 10px;
+}
+.my-img{
+   
+   /* background: white url(../images/img-4.jpg) no-repeat center;*/
+    height:100vh;
+    background-size: cover;
+    position: fixed;
+    
+}
+.my-nav-download{
+    font-size: 18px;
+    width: 190px;
+    height: 50px;
+    padding: 10px;
+    margin-left: 20px;
+    border: 1px solid white;
+    border-radius: 100px;
+}
+
+.round{
+    width:270px;
+    height: 250px;
+    background:rgba(0, 0, 0, 0.8);
+    border-radius: 100%;
+    margin-top: 140px;
+    margin-left: -160px;
+}
+.my-name{
+    color: white;
+    padding-top: 70px;
+    padding-left: 20px;
+    font-size: 60px;
+    font-weight: 600;
+}
+.my-surname{
+    color: white;
+    padding-top: 70px;
+    padding-left: 70px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.cont-btn{
+    border-radius: 50px !important;
+}
+.cont-btn:hover{
+    box-shadow: 0 0 5px white;
+}
+.my-down{
+    width: 70px;
+    height: 50px;
+    margin-left: 250px;
+    margin-top: -55px !important;
+    border-radius: 100%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.7s;
+    box-shadow: 0px 1px 5px white;
+    animation: glow-icon 0.5s infinite;
+}
+.my-down:hover{
+    transform: scale(1.05,1.05);
+    border: 2px dotted white;
+    box-shadow: 0px 5px 9px white;
+    cursor: pointer;
+}
+@keyframes glow-icon {
+    0%,100%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(1.07,1.07);
+        border: 3px dotted white;
+    }
+}
+
+/*----------------About section  --------------*/
+.my-table{
+    width: 100% !important;
+}
+
+/*-------------------social section-----------*/
+.my-social{
+    position: fixed;
+    right: 20px;
+    bottom: 180px;
+    width:60px !important;
+    height: 100px;
+    transition: all 0.4s;
+}
+.my-social>ul>li{
+    border: 1px solid snow;
+}
+.my-social>ul>li:hover{
+    box-shadow: 0px 3px 3px white;
+    border: 2px solid white;
+    transform: scale(1.05,1.05);
+    border-radius: 100px;
+    color: aqua;
+}
+.my-social-icon{
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+}
+
+/*------------contact section--------*/
+.info-card{
+   border:2px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px white;
+}
+
+
+.send-btn{
+    
+    border: 1px solid white;
+    border-radius: 100px;
+}
+
+
+
+.send-btn:hover{
+    box-shadow: 0 0 5px white;
+}
+
+
+
+/*--------------------media query---------------*/
+@media (max-width:576px) {
+    .my-nav{
+        left:30px;
+        border-radius: 30px;
+    }
+    .my-img{
+        width: 100% !important;
+    }
+    .round{display: none;}
+    #name-section{
+        margin-top: 100px;
+    }
+}
